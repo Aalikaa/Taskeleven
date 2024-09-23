@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Example</title>
+</head>
+<body>
+
+    <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Kilb6oMIDH6w10eCixLl8OQC0HLuuGAe9w&s" alt="Placeholder Image">
+
+    <script>
+        const image = document.getElementById('myImage');
+
+        image.addEventListener('mouseover', function() {
+            image.style.display = 'none'; // Hide the image
+        });
+
+        image.addEventListener('mouseout', function() {
+            image.style.display = 'block'; // Show the image
+        });
+    </script>
+
+</body>
+</html>
